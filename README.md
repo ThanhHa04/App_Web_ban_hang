@@ -13,6 +13,7 @@
 - **Giao hàng nhanh chóng:** Đảm bảo giao hàng đúng hẹn và chính xác.
 - **Chính sách bảo hành và đổi trả:** Hỗ trợ khách hàng với các chính sách bảo hành, đổi trả rõ ràng.
 ## Hướng dẫn sử dụng:
+* Đối với khách hàng:*
 - **Đăng ký tài khoản người dùng:** Đăng ký tài khoản cá nhân để mua hàng và theo dõi đơn hàng.
 - **Chọn sản phẩm:** Duyệt qua danh mục sản phẩm, chọn sản phẩm yêu thích và thêm vào giỏ hàng.
 - **Thanh toán:** Chọn phương thức thanh toán và hoàn tất đơn hàng.
