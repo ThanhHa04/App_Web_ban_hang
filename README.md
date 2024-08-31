@@ -4,6 +4,10 @@
   Website bán hàng điện tử được phát triển nhằm mang lại trải nghiệm mua sắm tiện lợi và hiện đại cho khách hàng. huyên cung cấp các sản phẩm điện tử chất lượng cao, từ điện thoại, máy tính, cho đến các thiết bị gia dụng thông minh, đáp ứng nhu cầu ngày càng đa dạng của người tiêu dùng.
 ## Mục đích:
   Giúp khách hàng dễ dàng tiếp cận sản phẩm, tạo không gian mua sắm thoải mái và riêng tư. Đồng thời hỗ trợ khách hàng ở xa có thể mua hàng thuận tiện như khi đến trực tiếp cửa hàng.
+## Đối tượng sử dụng:
+- **Guest:** Những khách hàng muốn tìm kiếm, tham khảo sản phẩm nhưng chưa đăng ký tài khoản và chưa phát sinh giao dịch mua hàng.
+- **User:** Khách hàng đã đăng ký tài khoản và có phát sinh giao dịch mua hàng trước đó.
+- **Admin:** Nhà quản trị web bán hàng, đăng tải và cập nhật các sản phẩm hiện có, xem thống kê doanh thu, thao tác và giao tiếp với các tài khoản người dùng.
 ## Tính năng chính:
 - **Giao diện thân thiện**: Thiết kế đơn giản, dễ sử dụng, giúp người dùng dễ dàng tìm kiếm và mua sản phẩm.
 - **Danh mục sản phẩm đa dạng:** Cung cấp nhiều loại sản phẩm điện tử từ các thương hiệu uy tín, thông tin sản phẩm rõ ràng.
@@ -24,8 +28,10 @@
 - **Áp mã giảm giá:** Voucher discount, freeship (nếu có).
 - **Thanh toán:** Chọn phương thức thanh toán và hoàn tất đơn hàng.
 - **Quản lý tài khoản:** Cập nhật thông tin cá nhân, theo dõi đơn hàng và lịch sử mua hàng.
+- **Giao tiếp với admin:** Liên lạc với nhà bán hàng để được giải đáp thắc mắc (nếu có).
 ### Đối với nhà quản trị:
 - **Thao tác với sản phẩm:** Cập nhật sản phẩm mới, thêm, xóa, sửa thông tin sản phẩm.
 - **Quản lý tài khoản khách hàng:** Tạo mới, xóa tài khoản nếu phát hiện bất thường.
 - **Quản lý doanh thu:** Kiểm tra doanh thu theo ngày, theo tháng và năm.
 - **Thêm các Chương trình khuyến mãi:** Cập nhật các mã giảm giá cho sản phẩm (nếu có).
+- **Giao tiếp với User:** Trao đổi thông tin, giải đáp thắc mắc với người mua hàng.
