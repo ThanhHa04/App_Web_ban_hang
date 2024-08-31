@@ -12,8 +12,11 @@
 - **Quản lý đơn hàng:** Khách hàng có thể theo dõi tình trạng đơn hàng một cách dễ dàng.
 - **Giao hàng nhanh chóng:** Đảm bảo giao hàng đúng hẹn và chính xác.
 - **Chính sách bảo hành và đổi trả:** Hỗ trợ khách hàng với các chính sách bảo hành, đổi trả rõ ràng.
-## Hướng dẫn sử dụng:
-### Đối với khách hàng:
+## Hướng dẫn sử dụng
+### Đối với guest:
+- **Tìm kiếm sản phẩm:** Kiểm tra danh mục sản phẩm cần tìm.
+- **Kiểm tra sản phẩm:** Xem thông tin sản phẩm so với yêu cầu cá nhân.
+### Đối với user:
 - **Đăng ký tài khoản người dùng:** Đăng ký tài khoản cá nhân để mua hàng và theo dõi đơn hàng.
 - **Chọn sản phẩm:** Duyệt qua danh mục sản phẩm, chọn sản phẩm yêu thích và thêm vào giỏ hàng.
 - **Thao tác với giỏ hàng:** Thêm, xóa, thay đổi số lượng sản phẩm.
