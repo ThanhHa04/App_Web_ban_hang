@@ -16,5 +16,11 @@
 ### Đối với khách hàng:
 - **Đăng ký tài khoản người dùng:** Đăng ký tài khoản cá nhân để mua hàng và theo dõi đơn hàng.
 - **Chọn sản phẩm:** Duyệt qua danh mục sản phẩm, chọn sản phẩm yêu thích và thêm vào giỏ hàng.
+- **Thao tác với giỏ hàng:** Thêm, xóa, thay đổi số lượng sản phẩm.
+- **Nhập thông tin giao hàng:** Cài mặc định hoặc thay đổi địa chỉ giao hàng, số điện thoại cho mỗi đơn hàng.
+- **Áp mã giảm giá:** Voucher discount, freeship (nếu có).
 - **Thanh toán:** Chọn phương thức thanh toán và hoàn tất đơn hàng.
-- **Quản lý tài khoản:** Theo dõi đơn hàng, cập nhật thông tin cá nhân và lịch sử mua hàng.
+- **Quản lý tài khoản:** Cập nhật thông tin cá nhân, theo dõi đơn hàng và lịch sử mua hàng.
+### Đối với nhà quản trị:
+- **Thao tác với sản phẩm:** Cập nhật sản phẩm mới, thêm, xóa, sửa thông tin sản phẩm.
+- 
