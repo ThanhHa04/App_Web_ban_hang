@@ -13,10 +13,10 @@
 - **Giao hàng nhanh chóng:** Đảm bảo giao hàng đúng hẹn và chính xác.
 - **Chính sách bảo hành và đổi trả:** Hỗ trợ khách hàng với các chính sách bảo hành, đổi trả rõ ràng.
 ## Hướng dẫn sử dụng
-### Đối với guest:
+### Đối với Guest:
 - **Tìm kiếm sản phẩm:** Kiểm tra danh mục sản phẩm cần tìm.
 - **Kiểm tra sản phẩm:** Xem thông tin sản phẩm so với yêu cầu cá nhân.
-### Đối với user:
+### Đối với User:
 - **Đăng ký tài khoản người dùng:** Đăng ký tài khoản cá nhân để mua hàng và theo dõi đơn hàng.
 - **Chọn sản phẩm:** Duyệt qua danh mục sản phẩm, chọn sản phẩm yêu thích và thêm vào giỏ hàng.
 - **Thao tác với giỏ hàng:** Thêm, xóa, thay đổi số lượng sản phẩm.
@@ -26,4 +26,6 @@
 - **Quản lý tài khoản:** Cập nhật thông tin cá nhân, theo dõi đơn hàng và lịch sử mua hàng.
 ### Đối với nhà quản trị:
 - **Thao tác với sản phẩm:** Cập nhật sản phẩm mới, thêm, xóa, sửa thông tin sản phẩm.
-- 
+- **Quản lý tài khoản khách hàng:** Tạo mới, xóa tài khoản nếu phát hiện bất thường.
+- **Quản lý doanh thu:** Kiểm tra doanh thu theo ngày, theo tháng và năm.
+- **Thêm các Chương trình khuyến mãi:** Cập nhật các mã giảm giá cho sản phẩm (nếu có).
