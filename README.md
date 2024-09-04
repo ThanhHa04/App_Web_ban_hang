@@ -30,8 +30,8 @@
 - **Quản lý tài khoản:** Cập nhật thông tin cá nhân, theo dõi đơn hàng và lịch sử mua hàng.
 - **Giao tiếp với admin:** Liên lạc với nhà bán hàng để được giải đáp thắc mắc (nếu có).
 ### Đối với nhà quản trị:
-- **Thao tác với sản phẩm:** Cập nhật sản phẩm mới, thêm, xóa, sửa thông tin sản phẩm.
+- **Quản  sản phẩm:** Cập nhật sản phẩm mới, thêm, xóa, sửa thông tin sản phẩm.
 - **Quản lý tài khoản khách hàng:** Tạo mới, xóa tài khoản nếu phát hiện bất thường.
-- **Quản lý doanh thu:** Kiểm tra doanh thu theo ngày, theo tháng và năm.
+- **Quản lý doanh thu:** Thống  doanh thu theo ngày, theo tháng và năm.
 - **Thêm các Chương trình khuyến mãi:** Cập nhật các mã giảm giá cho sản phẩm (nếu có).
 - **Giao tiếp với User:** Trao đổi thông tin, giải đáp thắc mắc với người mua hàng.
