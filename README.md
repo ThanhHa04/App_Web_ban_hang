@@ -32,6 +32,8 @@
 ### Đối với nhà quản trị:
 - **Quản  sản phẩm:** Cập nhật sản phẩm mới, thêm, xóa, sửa thông tin sản phẩm.
 - **Quản lý tài khoản khách hàng:** Tạo mới, xóa tài khoản nếu phát hiện bất thường.
-- **Quản lý doanh thu:** Thống  doanh thu theo ngày, theo tháng và năm.
+- **Quản lý doanh thu:** Thống kê doanh thu theo ngày, theo tháng và năm.
+- **Quản lý kho:** Thống kê số lượng sản phẩm hiện có.
+- **Quản lý kho:** Thống kê số lượng sản phẩm còn lại hiện có tại cửa hàng.
 - **Thêm các Chương trình khuyến mãi:** Cập nhật các mã giảm giá cho sản phẩm (nếu có).
 - **Giao tiếp với User:** Trao đổi thông tin, giải đáp thắc mắc với người mua hàng.
