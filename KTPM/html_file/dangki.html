@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng Kí Tài Khoản - Mars Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="../css_file/dangki.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="frame">
+      <div class="top-bar">
+        <span class="title">Thế giới đồ gia dụng</span>
+      </div>
+      <div class="flex-row-cf">
+        <div class="frame-9">
+          <a href="home.html" class="mars-decor">Mars Decor</a>
+          <div class="frame-a">
+            <input type="text" placeholder="Tìm kiếm sản phẩm, thương hiệu" class="tim-kiem-san-pham">
+            <button class="frame-b">
+              <i class='bx bx-search-alt'></i>
+              <div class="search-normal">
+                <div class="search-normal-c">
+                  <div class="search-normal-d"></div>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="frame-e">
+            <div class="frame-f">
+              <a href="dangnhap.html" class="dang-nhap">Đăng nhập</a>
+              <div class="rectangle"></div>
+              <a href="dangki.html" class="dang-ky-10">Đăng ký</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg">
+      <div class="frame-27">
+        <div class="input-field">
+          <div class="input-label">
+            <span class="label">Họ và tên</span>
+            <div class="input">
+              <input type="text" placeholder="Nhập đầy đủ họ tên" class="text-input" id="name">
+            </div>
+          </div>
+        </div>
+        
+        <div class="input-field-28">
+          <div class="input-label-2a">
+            <span class="label-2b">Email đăng nhập</span>
+            <div class="input-2c">
+              <input type="text" placeholder="Nhập email của bạn" class="text-input-2f" id="email">
+            </div>
+          </div>
+        </div>
+        
+        <div class="input-field-30">
+          <div class="input-label-32">
+            <span class="label-33">Mật khẩu đăng nhập</span>
+            <div class="input-34">
+              <input type="password" placeholder="Nhập mật khẩu của bạn" class="text-input-37" id="password">
+            </div>
+          </div>
+        </div>
+        
+        <div class="input-field-38">
+          <div class="input-label-3a">
+            <span class="label-3b">Nhập lại mật khẩu</span>
+            <div class="input-3c">
+              <input type="password" placeholder="Nhập lại mật khẩu của bạn" class="text-input-3f" id="confirmPassword">
+            </div>
+          </div>
+        </div>
+
+        <button class="button-base" id="registerButton" onclick="dangki(event)">
+          <span class="button-text">Đăng Kí</span>
+        </button>
+
+        <div class="frame-40">
+          <div class="rectangle-41"></div>
+          <span class="or">Hoặc</span>
+          <div class="rectangle-42"></div>
+        </div>
+
+        <div class="frame-43">
+          <button class="social-button">
+            <div class="social-icon">
+              <div class="vector-44"></div>
+            </div>
+            <span class="text-facebook"> Facebook</span>
+          </button>
+          <button class="social-button-45">
+            <div class="social-icon-46"></div>
+            <span class="text-google">Google</span>
+          </button>
+        </div>
+
+        <div class="no-account">
+          <span class="no-account-47">Bạn chưa có tài khoản?</span>
+          <a href="dangnhap.html" class="login-here"> Đăng nhập tại đây</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="frame-48">
+      <div class="frame-49">
+        <div class="frame-4a">
+          <span class="information">Thông Tin</span>
+          <div class="frame-4b">
+            <span class="faq">Hỏi đáp</span>
+            <span class="shipping-info">Thông tin vận chuyển</span>
+            <span class="buying-guide">Hướng dẫn mua hàng</span>
+            <span class="payment-method">Phương thức thanh toán</span>
+            <span class="return-policy">Chính sách đổi trả</span>
+            <span class="terms-of-use">Điều khoản sử dụng</span>
+            <span class="privacy-policy">Chính sách bảo mật</span>
+          </div>
+        </div>
+
+        <div class="frame-4c">
+          <span class="mars">Mars</span>
+          <div class="frame-4d">
+            <span class="about-us">Về chúng tôi</span>
+            <span class="contact-us">Liên hệ với chúng tôi</span>
+            <span class="store-location">Vị trí cửa hàng</span>
+          </div>
+        </div>
+
+        <div class="frame-4e">
+          <span class="global-mars">Mars Toàn Cầu</span>
+          <div class="frame-4f">
+            <span class="viet-nam">Việt Nam</span>
+            <span class="nhat-ban">Nhật Bản</span>
+            <span class="trung-quoc">Trung Quốc</span>
+            <span class="thai-lan">Thái Lan</span>
+          </div>
+        </div>
+
+        <div class="frame-50">
+          <span class="theo-doi-chung-toi">Theo Dõi Chúng Tôi</span>
+          <div class="frame-51">
+            <div class="facebook-black"></div>
+            <div class="youtube-black"></div>
+            <div class="instagram-black"></div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-54">
+        <span class="copyright">© 2024 Mars. All Rights Reserved.</span>
+        <div class="frame-55">
+          <span class="chung-toi-chap-nhan-thanh-toan">Chúng tôi chấp nhận thanh toán</span>
+          <div class="group-56">
+            <div class="visa-logo-png"></div>
+            <div class="paypal-preview"></div>
+            <div class="the-mastercard"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js_file/dangki.js"></script>
+</body>
+</html>
