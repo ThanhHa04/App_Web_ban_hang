@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css_file/giohang.css" />
+</head>
+<body>
+    <div class="main-container">
+      <div class="frame">
+        <div class="flex-row-af">
+          <div class="frame-8">
+            <a href="../html_file/home.html" class="tefal-decor">TEFAL</a>
+            <div class="frame-9">
+              <input type="text" placeholder="Tìm kiếm sản phẩm, thương hiệu" class="tim-kiem-san-pham"></input>
+              <div type="button" class="frame-a">
+                <i class='bx bx-search-alt'></i>
+              </div>
+            </div>
+          <div class="frame-e">
+            <div class="frame-f">
+              <div id="cart" class="cart-user" style="display: none;">
+                <ul>
+                  <li><i class='bx bx-cart' ></i></li>
+                  <li><a href="../html_file/giohang.html">Giỏ hàng</a></li>
+                </ul>
+              </div>
+                <i class="fa-solid fa-user"></i>
+                <div class="user">
+                <p id="displayName">Guest</p>
+              </div>
+                <div class="rectangle"></div>
+                <a href="#" id="logoutButton" class="dang-xuat">Đăng Xuất</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-container">
+          <button id="chatButton" class="chat-button">Chat with me</button>
+          <div id="chatBox" class="chat-box" style="display: none;">
+              <input type="text" id="userName" placeholder="Nhập tên tài khoản">
+              <textarea id="chatContent" placeholder="Nội dung..."></textarea>
+              <button id="send">Send</button>
+          </div>
+          <div class="icon"><i class='bx bx-chat'></i></div>
+        </div>
+        <div class="cart-container">
+          <div class="cart-items">
+              <h2>Danh sách sản phẩm</h2>
+              <div class="cart-item">
+                  <input type="checkbox" class="product-checkbox" onchange="updateTotal()" />
+                  <img src="../pic/robot-hut-bui.webp">
+                  <div class="cart-item-info">
+                      <div class="product-name">Robot hút bụi lau nhà Ecovacs Deebot T9</div>
+                      <div class="cart-item-quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" onchange="updateTotal()" />
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                      </div>
+                  </div>
+                  <div class="cart-item-price" data-price="7690000">7.690.000 <span class="price-b8">đ</span></div>
+              </div>
+              <div class="cart-item">
+                  <input type="checkbox" class="product-checkbox" onchange="updateTotal()" />
+                  <img src="../pic/candientu.webp">
+                  <div class="cart-item-info">
+                      <div class="product-name">Cân thông minh Xiaomi Smart Scale 2</div>
+                      <div class="cart-item-quantity">
+                          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1" onchange="updateTotal()" />
+                          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                      </div>
+                  </div>
+                  <div class="cart-item-price" data-price="2690000">2.690.000 <span class="price-b8">đ</span></div>
+              </div>
+              <div class="cart-item">
+                <input type="checkbox" class="product-checkbox" onchange="updateTotal()" />
+                <img src="../pic/mayhutbuicamtay.webp">
+                <div class="cart-item-info">
+                    <div class="product-name">Máy hút bụi cầm tay Deerma DX118C 600W có dây</div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" onchange="updateTotal()" />
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="cart-item-price" data-price="490000">490.000 <span class="price-b8">đ</span></div>
+              </div>
+              <div class="cart-item">
+                <input type="checkbox" class="product-checkbox" onchange="updateTotal()" />
+                <img src="../pic/may-say-Philips-HP8108.png">
+                <div class="cart-item-info">
+                    <div class="product-name">Máy sấy tóc Panasonic EH-NA27PN645 1200W</div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" onchange="updateTotal()" />
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="cart-item-price" data-price="2000000">2.000.000 <span class="price-b8">đ</span></div>
+              </div>
+              <div class="cart-item">
+                <input type="checkbox" class="product-checkbox" onchange="updateTotal()" />
+                <img src="../pic/may-say-Philips-BHD350.png">
+                <div class="cart-item-info">
+                    <div class="product-name">MÁY SẤY TÓC PHILIPS BHD350/10</div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" onchange="updateTotal()" />
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="cart-item-price" data-price="830000">830.000 <span class="price-b8">đ</span></div>
+              </div>
+              <div class="cart-item">
+                <input type="checkbox" class="product-checkbox" onchange="updateTotal()" />
+                <img src="../pic/may-xay-thit-BlueStone-CHB5139.png">
+                <div class="cart-item-info">
+                    <div class="product-name">Máy xay sinh tố đa năng Philips HR2223/00</div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" onchange="updateTotal()" />
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="cart-item-price" data-price="1740000">1.740.000 <span class="price-b8">đ</span></div>
+              </div>
+          </div>
+        <div class="cart-summary">
+          <h3>Tóm tắt giỏ hàng</h3>
+          <div id="selected-items"></div>
+          <div class="cart-summary-total">Tổng cộng: <span id="total-price">0 VND</span></div>
+          <button class="thanh-toan" onclick="window.location.href='thanhtoan.html'">Thanh toán</button>
+      </div>
+      
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="column">
+            <h3>Thông Tin</h3>
+            <ul>
+              <li><a href="#">Hỏi đáp</a></li>
+              <li><a href="#">Thông tin vận chuyển</a></li>
+              <li><a href="#">Hướng dẫn mua hàng</a></li>
+              <li><a href="#">Phương thức thanh toán</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+              <li><a href="#">Điều khoản sử dụng</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Liên hệ</h3>
+            <ul>
+              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="#">Liên hệ với chúng tôi</a></li>
+              <li><a href="#">Vị trí của hàng</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Có trên toàn cầu</h3>
+            <ul>
+              <li><a href="#">Việt Nam</a></li>
+              <li><a href="#">Nhật Bản</a></li>
+              <li><a href="#">Trung Quốc</a></li>
+              <li><a href="#">Thái Lan</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Theo Dõi Chúng Tôi</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+      </div>
+      <div class="bottom-bar">
+        <p>© 2024 . All Rights Reserved.</p>
+        <p>Chúng tôi chấp nhận thanh toán</p>
+        <div class="payment-icons">
+          <img alt="Visa" height="25" src="https://storage.googleapis.com/a1aa/image/XLaBYfeLZwmzAkCN2o3VaGcbjLOMJ1sSVzSnej3GVL38dGJnA.jpg" width="40"/>
+          <img alt="MasterCard" height="25" src="https://storage.googleapis.com/a1aa/image/yJl8HMH0UXqoM5MjSF5v1e5BssFDNLPx45piJo1IQRTdnRyJA.jpg" width="40"/>
+          <img alt="Discover" height="25" src="https://storage.googleapis.com/a1aa/image/dYHD13EO3LKnGZqWHjzIrllHRM6cMQJyCzGb4ODRXN7vzI5E.jpg" width="40"/>
+          <img alt="American Express" height="25" src="https://storage.googleapis.com/a1aa/image/8gO6OzVmypL9NJeq0eSLeHfziT0tp1rKw9ZENHHBjxPg7MSOB.jpg" width="40"/>
+          <img alt="PayPal" height="25" src="https://storage.googleapis.com/a1aa/image/xdie9lMxMNyrfE4TxZVubY0J2WGl7IyxuvbiW4nyEA37OjkTA.jpg" width="40"/>
+        </div>
+      </div>
+    </div>
+    </footer> 
+    <script src="../js_file/giohang.js"></script>
+</body>
+</html>

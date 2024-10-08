@@ -1,0 +1,199 @@
+<html>
+<head>
+    <title>Flat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+    <link rel="stylesheet" href="../css_file/thanhtoan.css">
+    
+</head>
+<body>
+    <div class="main-container">
+      <div class="frame">
+        <div class="flex-row-af">
+          <div class="frame-8">
+            <a href="../html_file/home.html" class="tefal-decor">Tefal</a>
+            <div class="frame-9">
+              <input type="text" placeholder="Tìm kiếm sản phẩm, thương hiệu" class="tim-kiem-san-pham"></input>
+              <div type="button" class="frame-a">
+                <i class='bx bx-search-alt'></i>
+              </div>
+            </div>
+          <div class="frame-e">
+            <div class="frame-f">
+              <div id="cart" class="cart-user" style="display: none;">
+                <ul>
+                  <li><i class='bx bx-cart' ></i></li>
+                  <li><a href="../html_file/giohang.html">Giỏ hàng</a></li>
+                </ul>
+              </div>
+                <i class="fa-solid fa-user"></i>
+                <div class="user">
+                <p id="displayName">Guest</p>
+              </div>
+                <div class="rectangle"></div>
+                <a href="#" id="logoutButton" class="dang-xuat">Đăng Xuất</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="cot_trai">
+                <div class="form-group">
+                 <label for="name">
+                  Họ và tên *
+                 </label>
+                 <input id="name" placeholder="Họ và tên người nhận" type="text"/>
+                </div>
+                <div class="form-group">
+                 <label for="phone">
+                  Điện thoại người nhận *
+                 </label>
+                 <input id="phone" placeholder="Số điện thoại người nhận" type="text"/>
+                </div>
+                <div class="form-group">
+                 <label for="city">
+                  Tỉnh/ Thành phố *
+                 </label>
+                 <select id="city">
+                  <option>
+                   --Chọn tỉnh/ thành phố--
+                  </option>
+                 </select>
+                </div>
+                <div class="form-group">
+                 <label for="district">
+                  Quận/ Huyện *
+                 </label>
+                 <select id="district">
+                  <option>
+                   --Chọn quận/ huyện--
+                  </option>
+                 </select>
+                </div>
+                <div class="form-group">
+                 <label for="ward">
+                  Phường/ Xã *
+                 </label>
+                 <select id="ward">
+                  <option>
+                   --Chọn phường/ xã--
+                  </option>
+                 </select>
+                </div>
+                <div class="form-group">
+                 <label for="address">
+                  Địa chỉ chi tiết *
+                 </label>
+                 <input id="address" placeholder="Tên phố/ xóm, số nhà" type="text"/>
+                </div>
+                <div class="form-group">
+                 <label for="note">
+                  Ghi chú giao hàng
+                 </label>
+                 <textarea id="note" placeholder="Tên phố/ xóm, số nhà"></textarea>
+                </div>
+                <div class="form-group">
+                 <label>
+                  Phương thức thanh toán
+                 </label>
+                 <div class="radio-group">
+                  <div class="radio-item">
+                   <input checked="" id="cod" name="payment" type="radio"/>
+                   <label for="cod">
+                    Thanh toán khi nhận hàng
+                   </label>
+                   <p class="radio-label">
+                    Quý khách sẽ thanh toán bằng tiền mặt khi nhận hàng
+                   </p>
+                  </div>
+                  <div class="radio-item">
+                   <input id="online" name="payment" type="radio"/>
+                   <label for="online">
+                    Thanh toán trực tuyến
+                   </label>
+                   <p class="radio-label">
+                    Thanh toán qua internet banking
+                   </p>
+                  </div>
+                 </div>
+                </div>
+                <button class="thanh-toan">Thanh Toán</button>
+            </div>
+            <div class="cot_phai">
+              <h2>Sản Phẩm Đã Chọn</h2>
+              <div id="products-container"></div>
+              <div class="summary">
+                  <div class="summary-item">
+                      <div class="label">Tổng tiền:</div>
+                      <div class="value" id="total-price">0đ</div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+              <div class="new-div">
+                   
+                  </div>
+        <footer>
+          <div class="footer">
+            <div class="container">
+              <div class="column">
+              <h3>Thông Tin</h3>
+              <ul>
+                <li><a href="#">Hỏi đáp</a></li>
+                <li><a href="#">Thông tin vận chuyển</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li><li><a href="#">Phương thức thanh toán</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>Liên hệ</h3>
+              <ul>
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Liên hệ với chúng tôi</a></li>
+                <li><a href="#">Vị trí của hàng</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>Có trên toàn cầu</h3>
+              <ul>
+                <li><a href="#">Việt Nam</a></li>
+                <li><a href="#">Nhật Bản</a></li>
+                <li><a href="#">Trung Quốc</a></li>
+                <li><a href="#">Thái Lan</a></li>
+              </ul>
+              </div>
+              <div class="column">
+              <h3>Theo Dõi Chúng Tôi</h3>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+              </div>
+              </div>
+            </div>
+            <div class="bottom-bar">
+              <p>© 2024 . All Rights Reserved.</p>
+              <p>Chúng tôi chấp nhận thanh toán</p>
+              <div class="payment-icons">
+                <img alt="Visa" height="25" src="https://storage.googleapis.com/a1aa/image/XLaBYfeLZwmzAkCN2o3VaGcbjLOMJ1sSVzSnej3GVL38dGJnA.jpg" width="40"/>
+                <img alt="MasterCard" height="25" src="https://storage.googleapis.com/a1aa/image/yJl8HMH0UXqoM5MjSF5v1e5BssFDNLPx45piJo1IQRTdnRyJA.jpg" width="40"/>
+                <img alt="Discover" height="25" src="https://storage.googleapis.com/a1aa/image/dYHD13EO3LKnGZqWHjzIrllHRM6cMQJyCzGb4ODRXN7vzI5E.jpg" width="40"/>
+                <img alt="American Express" height="25" src="https://storage.googleapis.com/a1aa/image/8gO6OzVmypL9NJeq0eSLeHfziT0tp1rKw9ZENHHBjxPg7MSOB.jpg" width="40"/>
+                <img alt="PayPal" height="25" src="https://storage.googleapis.com/a1aa/image/xdie9lMxMNyrfE4TxZVubY0J2WGl7IyxuvbiW4nyEA37OjkTA.jpg" width="40"/>
+              </div>
+            </div>
+            </div>
+        </footer>    
+    </body>
+    <script src="../js_file/thanhtoan.js"></script>
+</html>

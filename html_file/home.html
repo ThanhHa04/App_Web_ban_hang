@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .btn-click-effect:active {
+    transform: scale(0.95);
+   }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css_file/home.css" />
+
+</head>
+<body >
+  <div class="main-container">
+    <div class="frame">
+      <div class="flex-row-af">
+        <div class="frame-8">
+          <a href="../html_file/home.html" class="tefal-decor">Tefal</a>
+          <div class="frame-9">
+            <input type="text" placeholder="Tìm kiếm sản phẩm, thương hiệu" class="tim-kiem-san-pham"></input>
+            <div type="button" class="frame-a">
+              <i class='bx bx-search-alt'></i>
+            </div>
+          </div>
+        <div class="frame-e">
+          <div class="frame-f">
+            <div id="cart" class="cart-user" style="display: none;">
+              <ul>
+                <li><i class='bx bx-cart' ></i></li>
+                <li><a href="../html_file/giohang.html">Giỏ hàng</a></li>
+              </ul>
+            </div>
+              <i class="fa-solid fa-user"></i>
+              <div class="user">
+              <p id="displayName">User</p>
+            </div>
+              <div class="rectangle"></div>
+              <a href="#" id="logoutButton" class="dang-xuat">Đăng Xuất</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="adminPanel" class="admin-panel" style="display: none;">
+        <ul>
+          <li><a href="#" id="statistics">Thống kê</a></li>
+          <li><a href="#" id="userList">Danh sách tài khoản User</a></li>
+          <div id="user-list" style="display: none;">
+            <button id="closeUserList" style="float: right; background: none; border: none; font-size: 20px; cursor: pointer;">&times;</button>
+          </div> 
+          <li><a href="#" id="orderList">Danh sách đơn hàng</a></li>
+          <li><a href="#" id="discountList">Cập nhật mã giảm giá</a></li>
+        </ul>
+      </div>
+      <div id="overlay" style="display: none;"></div>
+      <div class="chat-container">
+        <button id="chatButton" class="chat-button">Chat with me</button>
+        <div id="chatBox" class="chat-box" style="display: none;">
+            <input type="text" id="userName" placeholder="Nhập tên tài khoản">
+            <textarea id="chatContent" placeholder="Nội dung..."></textarea>
+            <button id="send">Send</button>
+        </div>
+        <div class="icon"><i class='bx bx-chat'></i></div>
+      </div>
+      <div class="slideshow-container">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2" >
+        <input type="radio" name="slide" id="slide3" >
+      
+        <div class="slides">
+          <div class="slide slide1"></div>
+          <div class="slide slide2"></div>
+          <div class="slide slide3"></div>
+        </div>
+        <div class="prev" onclick="prevSlide()">&#10094;</div>
+        <div class="next" onclick="nextSlide()">&#10095;</div>
+      </div>
+      
+    <div class="products">
+      <div class="product-1" onclick="showProductInfo('Máy xay đa năng')">
+        <div class="mayxay-pic"></div>
+        <a href="../html_file/sanpham.html" class="product-name">Máy xay đa năng</a>
+    </div>
+      <div class="product-2">
+        <div class="search-results-3f">
+          <div class="group-40"></div>
+        </div>
+        <span class="noi-chien">Nồi chiên không dầu</span>
+      </div>
+      <div class="frame-41">
+        <div class="search-results-42">
+          <div class="group-43">
+            <div class="layer"></div>
+          </div>
+        </div>
+        <span class="noiduc">Nồi đúc cao cấp</span>
+      </div>
+      <div class="frame-45">
+        <div class="search-results-46">
+          <div class="group-47">
+            <div class="vector-48"></div>
+          </div>
+        </div>
+        <span class="chaoduc">Chảo đúc cao cấp</span>
+      </div>
+      <div class="frame-49">
+        <div class="search-results-4a">
+          <div class="group-4b">
+            <div class="vector-4c"></div>
+          </div>
+        </div>
+        <span class="bep-dien-tu">Bếp điện tử</span>
+      </div>
+    </div>
+    <!-- start- sửa lại code phần sản phẩm -->
+     <div></div>
+    <div class="product-list">
+      <a class="product-item" href="#">
+       <img alt="Hair dryer" height="200" src="https://storage.googleapis.com/a1aa/image/wykqgId13vrqNdfsyzRTdfrWUC25Rv4tDedfydG1adHHeCmcC.jpg" width="200"/>
+       <div class="product-price">
+        830.000 ₫
+       </div>
+       <div class="product-name">
+        MÁY SẤY TÓC PHILIPS BHD350/10
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Health scale" height="200" src="https://storage.googleapis.com/a1aa/image/tB70lwus89oTH1IGpQLqlj0rz6wfr93Oi7zM3IWW4uBCuXyJA.jpg" width="200"/>
+       <div class="product-price">
+        1.690.000 ₫
+       </div>
+       <div class="product-name">
+        Cân sức khỏe Tanita
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Robot vacuum cleaner" height="200" src="https://storage.googleapis.com/a1aa/image/0i9Cv9kWUQ54NhX0keJl49LQUNLh0fIiWeTiHSw2vPnE4eSOB.jpg" width="200"/>
+       <div class="product-price">
+        5.590.000 ₫
+       </div>
+       <div class="product-name">
+        Robot hút bụi lau nhà Shimono RS38B
+       </div>
+       <div class="product-status out-of-stock">
+        Hết hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Blender" height="200" src="https://storage.googleapis.com/a1aa/image/4O3njdA54z6DNZxZR7B5Uhdef2piGnkoHNQCaeWuZRdO4eSOB.jpg" width="200"/>
+       <div class="product-price">
+        1.740.000 ₫
+       </div>
+       <div class="product-name">
+        Máy xay sinh tố đa năng Philips HR2223/00
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Meat grinder" height="200" src="https://storage.googleapis.com/a1aa/image/9wqaesbPQYykWC9EGfpPjbeG4xwMH139a9cfyNhqbduMw9SOB.jpg" width="200"/>
+       <div class="product-price">
+        989.000 ₫
+       </div>
+       <div class="product-name">
+        Máy xay thịt đa năng BlueStone CHB-5139 300W
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+     </div>
+
+     <!-- sp dong 2 -->
+     <div class="product-list">
+      <a class="product-item" href="#">
+       <img alt="Hair dryer" height="200" src="https://storage.googleapis.com/a1aa/image/wykqgId13vrqNdfsyzRTdfrWUC25Rv4tDedfydG1adHHeCmcC.jpg" width="200"/>
+       <div class="product-price">
+        830.000 ₫
+       </div>
+       <div class="product-name">
+        MÁY SẤY TÓC PHILIPS BHD350/10
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Health scale" height="200" src="https://storage.googleapis.com/a1aa/image/tB70lwus89oTH1IGpQLqlj0rz6wfr93Oi7zM3IWW4uBCuXyJA.jpg" width="200"/>
+       <div class="product-price">
+        1.690.000 ₫
+       </div>
+       <div class="product-name">
+        Cân sức khỏe Tanita
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Robot vacuum cleaner" height="200" src="https://storage.googleapis.com/a1aa/image/0i9Cv9kWUQ54NhX0keJl49LQUNLh0fIiWeTiHSw2vPnE4eSOB.jpg" width="200"/>
+       <div class="product-price">
+        5.590.000 ₫
+       </div>
+       <div class="product-name">
+        Robot hút bụi lau nhà Shimono RS38B
+       </div>
+       <div class="product-status out-of-stock">
+        Hết hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Blender" height="200" src="https://storage.googleapis.com/a1aa/image/4O3njdA54z6DNZxZR7B5Uhdef2piGnkoHNQCaeWuZRdO4eSOB.jpg" width="200"/>
+       <div class="product-price">
+        1.740.000 ₫
+       </div>
+       <div class="product-name">
+        Máy xay sinh tố đa năng Philips HR2223/00
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Meat grinder" height="200" src="https://storage.googleapis.com/a1aa/image/9wqaesbPQYykWC9EGfpPjbeG4xwMH139a9cfyNhqbduMw9SOB.jpg" width="200"/>
+       <div class="product-price">
+        989.000 ₫
+       </div>
+       <div class="product-name">
+        Máy xay thịt đa năng BlueStone CHB-5139 300W
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+     </div>
+
+     <!-- sp dong 2 -->
+
+
+     <!-- sp dong 3  -->
+     <div class="product-list">
+      <a class="product-item" href="#">
+       <img alt="Hair dryer" height="200" src="https://storage.googleapis.com/a1aa/image/wykqgId13vrqNdfsyzRTdfrWUC25Rv4tDedfydG1adHHeCmcC.jpg" width="200"/>
+       <div class="product-price">
+        830.000 ₫
+       </div>
+       <div class="product-name">
+        MÁY SẤY TÓC PHILIPS BHD350/10
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Health scale" height="200" src="https://storage.googleapis.com/a1aa/image/tB70lwus89oTH1IGpQLqlj0rz6wfr93Oi7zM3IWW4uBCuXyJA.jpg" width="200"/>
+       <div class="product-price">
+        1.690.000 ₫
+       </div>
+       <div class="product-name">
+        Cân sức khỏe Tanita
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Robot vacuum cleaner" height="200" src="https://storage.googleapis.com/a1aa/image/0i9Cv9kWUQ54NhX0keJl49LQUNLh0fIiWeTiHSw2vPnE4eSOB.jpg" width="200"/>
+       <div class="product-price">
+        5.590.000 ₫
+       </div>
+       <div class="product-name">
+        Robot hút bụi lau nhà Shimono RS38B
+       </div>
+       <div class="product-status out-of-stock">
+        Hết hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Blender" height="200" src="https://storage.googleapis.com/a1aa/image/4O3njdA54z6DNZxZR7B5Uhdef2piGnkoHNQCaeWuZRdO4eSOB.jpg" width="200"/>
+       <div class="product-price">
+        1.740.000 ₫
+       </div>
+       <div class="product-name">
+        Máy xay sinh tố đa năng Philips HR2223/00
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+      <a class="product-item" href="#">
+       <img alt="Meat grinder" height="200" src="https://storage.googleapis.com/a1aa/image/9wqaesbPQYykWC9EGfpPjbeG4xwMH139a9cfyNhqbduMw9SOB.jpg" width="200"/>
+       <div class="product-price">
+        989.000 ₫
+       </div>
+       <div class="product-name">
+        Máy xay thịt đa năng BlueStone CHB-5139 300W
+       </div>
+       <div class="product-status in-stock">
+        Còn hàng
+       </div>
+      </a>
+     </div>
+
+     <div class="max-w-screen-xl mx-auto p-4">
+      <div class="flex">
+       <div class="w-111 bg-white p-4 rounded-lg shadow-lg">
+        <img style="height:490px;"alt="Promotional image with various kitchen appliances and a happy person" class="rounded-lg w-full h-full object-cover" src="https://cdnv2.tgdd.vn/mwg-static/common/Campaign/cd/7f/cd7fb5621cfae31e69a625b4ec5e10f6.png"/>
+       </div>
+       <div class="w-333 pl-4">
+        <div class="bg-brown">
+         <div class="chon-muc">
+          <button class="bg-gray-800 text-white px-4 py-2 rounded-full">
+           Nổi bật
+          </button>
+          <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">
+           Nồi chiên
+          </button>
+          <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">
+           Nồi cơm điện
+          </button>
+          <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">
+           Lò vi sóng
+          </button>
+          <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">
+           Bình đun
+          </button>
+         </div>
+         <div class="grid grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow-lg">
+           <img alt="Air fryer" class="mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/zyC9eTPiZd3zT6G3lD9A1aGgTPR9NYLsY31zsEgvJo65dYyJA.jpg" width="150"/>
+           
+           <a href="../html_file/sanpham.html" class="text-gray-800 font-medium mb-2">
+            Nồi chiên không dầu Sunhouse Mama SHD4086W 4.5 lít</a>
+           <div class="text-red-600 font-bold text-lg mb-2">
+            950.000đ
+           </div>
+           <div class="text-gray-500 line-through mb-2">
+            1.980.000đ
+           </div>
+           <div class="text-yellow-500 mb-2">
+            Quà 100.000đ
+           </div>
+           <div class="text-gray-500 mb-2">
+            <i class="fas fa-star text-yellow-500">
+            </i>
+            4.4 (48)
+           </div>
+           <div class="text-yellow-500 font-bold">
+            Còn 16/20 suất
+           </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-lg">
+           <img alt="Rice cooker" class="mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/fonbhfcNAchWWUtJProjasiVZIevHysvExj1ea0zWSe6dHmcC.jpg" width="150"/>
+           
+           <div class="text-gray-800 font-medium mb-2">
+            Nồi cơm nắp gài Crystal 1.2 lít JRC-120S
+           </div>
+           <div class="text-red-600 font-bold text-lg mb-2">
+            559.000đ
+           </div>
+           <div class="text-gray-500 line-through mb-2">
+            1.030.000đ
+           </div>
+           <div class="text-yellow-500 mb-2">
+            Quà 100.000đ
+           </div>
+           <div class="text-gray-500 mb-2">
+            <i class="fas fa-star text-yellow-500">
+            </i>
+            4.3 (34)
+           </div>
+           <div class="text-yellow-500 font-bold">
+            Còn 17/20 suất
+           </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-lg">
+           <img alt="Microwave oven" class="mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/xloHhn18R96SLdxN1i8bNF47fQxiEyljFIIx5YoWNfR07wkTA.jpg" width="150"/>
+           
+           <div class="text-gray-800 font-medium mb-2">
+            Lò vi sóng có nướng BlueStone MOB-7833 25 lít
+           </div>
+           <div class="text-red-600 font-bold text-lg mb-2">
+            2.640.000đ
+           </div>
+           <div class="text-gray-500 line-through mb-2">
+            3.499.000đ
+           </div>
+           <div class="text-yellow-500 mb-2">
+            Quà 490.000đ
+           </div>
+           <div class="text-gray-500 mb-2">
+            <i class="fas fa-star text-yellow-500">
+            </i>
+            4.2 (10)
+           </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-lg">
+           <img alt="Electric kettle" class="mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/8UY74jQA1v54CJWUfXZiDWzAyRJqv2VTPf11LDMfzfQKvDTOB.jpg" width="150"/>
+           
+           <div class="text-gray-800 font-medium mb-2">
+            Bình đun siêu tốc AVA 1.8 lít YD-1825
+           </div>
+           <div class="text-red-600 font-bold text-lg mb-2">
+            249.000đ
+           </div>
+           <div class="text-gray-500 line-through mb-2">
+            550.000đ
+           </div>
+           <div class="text-yellow-500 mb-2">
+            Quà 100.000đ
+           </div>
+           <div class="text-gray-500 mb-2">
+            <i class="fas fa-star text-yellow-500">
+            </i>
+            4.3 (149)
+           </div>
+           <div class="text-yellow-500 font-bold">
+            Còn 29/30 suất
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- dung tailwind -->
+
+    <!-- bo suu tap -->
+    <div class="khung-chua">
+      <div class="khung-chua-bst">
+        
+      </div>
+      <div class="banner-bo-suu-tap">
+       <img alt="Blender Collection" height="400" src="../pic/mayxay.png" width="300"/>
+       <div class="lop-phu">
+        <div class="tieu-de">
+         Bộ Sưu Tập Máy Xay
+        </div>
+        <a class="nut" href="#">
+         Xem thêm
+        </a>
+       </div>
+      </div>
+      <div class="bo-suu-tap-san-pham">
+       <div class="san-pham">
+        <img alt="Máy xay thịt đa năng BlueStone CHB-5149 300W" height="200" src="../pic/may-xay-thit-BlueStone-CHB5139.png" width="200"/>
+        <div class="gia">
+         890.000 đ
+        </div>
+        <div class="mo-ta">
+         Máy xay thịt đa năng BlueStone CHB-5149 300W
+        </div>
+        <a class="nut-mua" href="#">
+         Còn hàng
+        </a>
+       </div>
+       <div class="san-pham">
+        <img alt="Máy xay thịt đa năng BlueStone CHB-5139 300W" height="200" src="../pic/may-xay-thit-BlueStone-CHB5149.png" width="200"/>
+        <div class="gia">
+         989.000 đ
+        </div>
+        <div class="mo-ta">
+         Máy xay thịt đa năng BlueStone CHB-5139 300W
+        </div>
+        <a class="nut-mua" href="#">
+         Còn hàng
+        </a>
+       </div>
+       <div class="san-pham">
+        <img alt="Máy xay sinh tố đa năng Sunhouse SHD 5112 Xanh" style="height: 180px;" src="../pic/may-say-sunhouse-SHD-5112.png" />
+        <div class="gia">
+         390.000 đ
+        </div>
+        <div class="mo-ta">
+         Máy xay sinh tố đa năng Sunhouse SHD 5112 Xanh
+        </div>
+        <a class="nut-mua" href="#">
+         Còn hàng
+        </a>
+       </div>
+       <div class="san-pham">
+        <img alt="Máy xay sinh tố đa năng Toshiba MX-60T(H)"  src="../pic/toshiba.png" style="height:180px"/>
+        <div class="gia">
+         690.000 đ
+        </div>
+        <div class="mo-ta">
+         Máy xay sinh tố đa năng Toshiba MX-60T(H)
+        </div>
+        <a class="nut-mua" href="#">
+         Còn hàng
+        </a>
+       </div>
+      </div>
+     </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+         <div class="column">
+          <h3>Thông Tin</h3>
+          <ul>
+            <li><a href="#">Hỏi đáp</a></li>
+            <li><a href="#">Thông tin vận chuyển</a></li>
+            <li><a href="#">Hướng dẫn mua hàng</a></li><li><a href="#">Phương thức thanh toán</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Liên hệ</h3>
+          <ul>
+           <li><a href="#">Về chúng tôi</a></li>
+           <li><a href="#">Liên hệ với chúng tôi</a></li>
+           <li><a href="#">Vị trí của hàng</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Có trên toàn cầu</h3>
+          <ul>
+           <li><a href="#">Việt Nam</a></li>
+           <li><a href="#">Nhật Bản</a></li>
+           <li><a href="#">Trung Quốc</a></li>
+           <li><a href="#">Thái Lan</a></li>
+          </ul>
+         </div>
+         <div class="column">
+          <h3>Theo Dõi Chúng Tôi</h3>
+          <div class="social-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+         </div>
+        </div>
+        <div class="bottom-bar">
+          <p>© 2024 . All Rights Reserved.</p>
+          <p>Chúng tôi chấp nhận thanh toán</p>
+          <div class="payment-icons">
+            <img alt="Visa" height="25" src="https://storage.googleapis.com/a1aa/image/XLaBYfeLZwmzAkCN2o3VaGcbjLOMJ1sSVzSnej3GVL38dGJnA.jpg" width="40"/>
+            <img alt="MasterCard" height="25" src="https://storage.googleapis.com/a1aa/image/yJl8HMH0UXqoM5MjSF5v1e5BssFDNLPx45piJo1IQRTdnRyJA.jpg" width="40"/>
+            <img alt="Discover" height="25" src="https://storage.googleapis.com/a1aa/image/dYHD13EO3LKnGZqWHjzIrllHRM6cMQJyCzGb4ODRXN7vzI5E.jpg" width="40"/>
+            <img alt="American Express" height="25" src="https://storage.googleapis.com/a1aa/image/8gO6OzVmypL9NJeq0eSLeHfziT0tp1rKw9ZENHHBjxPg7MSOB.jpg" width="40"/>
+            <img alt="PayPal" height="25" src="https://storage.googleapis.com/a1aa/image/xdie9lMxMNyrfE4TxZVubY0J2WGl7IyxuvbiW4nyEA37OjkTA.jpg" width="40"/>
+         </div>
+        </div>
+       </div>
+    </footer>
+  </div>
+</body>
+  <script src="../js_file/home.js"></script>
+</html>
+
