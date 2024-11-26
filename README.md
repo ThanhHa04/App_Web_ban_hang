@@ -1,7 +1,7 @@
-# Web bán đồ điện tử 
+# Web bán gia dụng
 
 ## Giới thiệu:
-  Website bán hàng điện tử được phát triển nhằm mang lại trải nghiệm mua sắm tiện lợi và hiện đại cho khách hàng. huyên cung cấp các sản phẩm điện tử chất lượng cao, từ điện thoại, máy tính, cho đến các thiết bị gia dụng thông minh, đáp ứng nhu cầu ngày càng đa dạng của người tiêu dùng.
+  Website bán hàng gia dụng được phát triển nhằm mang lại trải nghiệm mua sắm tiện lợi và hiện đại cho khách hàng. huyên cung cấp các sản phẩm điện tử chất lượng cao, từ điện thoại, máy tính, cho đến các thiết bị gia dụng thông minh, đáp ứng nhu cầu ngày càng đa dạng của người tiêu dùng.
 ## Mục đích:
   Giúp khách hàng dễ dàng tiếp cận sản phẩm, tạo không gian mua sắm thoải mái và riêng tư. Đồng thời hỗ trợ khách hàng ở xa có thể mua hàng thuận tiện như khi đến trực tiếp cửa hàng.
 ## Đối tượng sử dụng:
